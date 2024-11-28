@@ -15,14 +15,19 @@ if __name__ == "__main__":
     database = sys.argv[3]
 
     # Connect to the MySQL database
-    engine = create_engine(f'mysql+mysqldb://{username}:{password}@localhost:3306/{database}', pool_pre_ping=True)
+    engine = create_engine(
+        f'mysql+mysqldb://{username}:{password}@localhost:3306/{database}',
+        pool_pre_ping=True
+    )
 
     # Create a session
     Session = sessionmaker(bind=engine)
     session = Session()
 
     # Delete all State objects with a name containing the letter 'a'
-    session.query(State).filter(State.name.like('%a%')).delete(synchronize_session=False)
+    session.query(State).filter(
+        State.name.like('%a%')
+    ).delete(synchronize_session=False)
 
     # Commit the changes to the database
     session.commit()
