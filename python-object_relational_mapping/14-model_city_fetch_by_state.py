@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Prints all City objects from the database hbtn_0e_14_usa using SQLAlchemy.
-"""
+""" 
 
 from sys import argv
 from sqlalchemy import create_engine
