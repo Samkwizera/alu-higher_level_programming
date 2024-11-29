@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""
+""" 
 This script changes the name of a State object with id = 2 to "New Mexico" in
 the database hbtn_0e_6_usa.
 It takes three arguments: mysql username, mysql password, and database name.
