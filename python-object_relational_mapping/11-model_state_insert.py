@@ -2,7 +2,7 @@
 """
 This script adds the State object "Louisiana" to the database hbtn_0e_6_usa.
 It takes three arguments: mysql username, mysql password, and database name.
-"""
+""" 
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
