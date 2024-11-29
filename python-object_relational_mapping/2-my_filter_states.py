@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""
+""" 
 This script lists all states with a name that matches the argument from the
 database hbtn_0e_0_usa.
 It takes four arguments: mysql username, mysql password, database name, and
