@@ -1,0 +1,23 @@
+{
+  "name": "alu-higher_level_programming",
+  "version": "1.0.0",
+  "description": "alu-higher_level_programming",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samkwizera/alu-higher_level_programming.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Samkwizera/alu-higher_level_programming/issues"
+  },
+  "homepage": "https://github.com/Samkwizera/alu-higher_level_programming#readme",
+  "devDependencies": {
+    "semistandard": "^17.0.0"
+  }
+}
