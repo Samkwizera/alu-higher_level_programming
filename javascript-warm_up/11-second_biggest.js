@@ -1,11 +1,17 @@
 #!/usr/bin/node
+const argsCount = process.argv.length;
+const numbers = [];
+switch (argsCount) {
+  case 2:
+  case 3:
+    console.log(0);
+    break;
 
-const args = process.argv.slice(2).map(Number);
-
-if (args.length < 2) {
-  console.log(0);
-} else {
-  const uniqueArgs = [...new Set(args)];
-  uniqueArgs.sort((a, b) => b - a);
-  console.log(uniqueArgs[1] !== undefined ? uniqueArgs[1] : 0);
+  default:
+    for (let i = 2; i < argsCount; i++) {
+      numbers.push(process.argv[i]);
+    }
+    numbers.sort((a, b) => b - a);
+    console.log(numbers[1]);
+    break;
 }
